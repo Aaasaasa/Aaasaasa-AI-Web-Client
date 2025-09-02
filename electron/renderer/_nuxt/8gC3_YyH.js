@@ -1,0 +1,1 @@
+import{_ as t}from"./DlAUqK2U.js";import{c as a,a as o,o as n}from"./C6OIWpgv.js";const r={},s={style:{padding:"24px"}};function c(l,e){return n(),a("div",s,[...e[0]||(e[0]=[o("h1",null,"/ChatGPT Web",-1),o("p",null,"Web dolazi ovamo ekran (placeholder)",-1)])])}const p=t(r,[["render",c]]);export{p as default};

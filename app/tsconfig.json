@@ -1,0 +1,26 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "include": ["nuxt.d.ts", "**/*.ts", "**/*.tsx", "**/*.vue"],
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "ES2022",
+    "jsx": "preserve",
+    "allowJs": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "#imports": ["./.nuxt/imports.d.ts"]
+    }
+  }
+}
+
+
+/*
+
+    "types": ["nuxt", "@types/node", "tailwindcss", "vue"],
+*/

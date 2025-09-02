@@ -1,0 +1,56 @@
+# Dependencies
+/node_modules
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+/output
+/.output
+/dist
+/.nuxt
+/out
+/build
+/renderer
+/release
+
+# Local runtime
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE/Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Electron
+*.asar
+*.exe
+*.dmg
+*.app
+*.apk
+*.ipa
+*.deb
+*.rpm
+*.snap
+*.AppImage
+
+# Qdrant data
+/qdrant/
+/qdrant/storage
+/squashfs-root/
+
+# Legacy/old
+/old

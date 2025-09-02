@@ -1,0 +1,18 @@
+export default {
+  "@vite/client": {
+    "prefetch": true,
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/nuxt@4.0.3_@parcel+watcher@2.5.1_@types+node@24.3.0_@vue+compiler-sfc@3.5.21_db0@0.3.2__a2b481e42048dca7f4fef2bc37ce4455/node_modules/nuxt/dist/app/entry.async.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "isEntry": true,
+    "file": "/home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/nuxt@4.0.3_@parcel+watcher@2.5.1_@types+node@24.3.0_@vue+compiler-sfc@3.5.21_db0@0.3.2__a2b481e42048dca7f4fef2bc37ce4455/node_modules/nuxt/dist/app/entry.async.js"
+  }
+}

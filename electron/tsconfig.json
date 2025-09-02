@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "types": ["vite/client", "node"]
+  },
+  "include": [
+    "./*.ts",
+    "./**/*.ts",
+    "main.cjs",
+    "preload.cjs",
+    "web.cjs",
+    "vector.cjs",
+    "canvas-shim.cjs",
+    "chatgpt.cjs",
+    "scripts/*.cjs"
+  ]
+}

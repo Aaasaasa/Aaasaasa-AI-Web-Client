@@ -1,0 +1,38 @@
+{
+  "name": "aaasaasa-web-client-app",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "dev": "nuxt dev --host 127.0.0.1 --port 3000",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.7.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "latest",
+    "nuxt": "^4.0.3",
+    "ofetch": "^1.4.1",
+    "radix-vue": "^1.9.17",
+    "reka-ui": "^2.4.1",
+    "shadcn-vue": "^2.2.0",
+    "tailwind-merge": "~3.3.1",
+    "tw-animate-css": "^1.3.7",
+    "vue": "^3.5.20"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.2.6",
+    "@iconify/vue": "^5.0.0",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.12",
+    "shadcn-nuxt": "^2.2.0",
+    "tailwindcss": "^4.1.12",
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.0.6"
+  }
+}
