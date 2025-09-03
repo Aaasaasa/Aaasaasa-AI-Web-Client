@@ -1,0 +1,33 @@
+{
+  "apiBase": "http://localhost:3000",
+  "wsBase": "ws://localhost:3000",
+  "ui": { "appTitle": "Aaasaasa AI Tool by Aleks" },
+  "duckdb": {
+    "path": "./duckdb/aaasaasa.duckdb",
+    "threads": "auto",
+    "memoryLimit": "12GB"
+  },
+  "rag": {
+    "vectorStore": {
+      "url": "http://localhost:6333",
+      "collection": "aaasaasa",
+      "size": 384
+    }
+  },
+  "security": {
+    "allowedOrigins": [
+      "http://localhost:3000",
+      "http://localhost:6333",
+      "https://api.openai.com",
+      "https://cdn.jsdelivr.net",
+      "https://unpkg.com"
+    ]
+  },
+  "ai": {
+    "provider": "openai",
+    "openai": { "baseURL": "https://api.openai.com/v1", "model": "gpt-4o-mini", "apiKey": null },
+    "ollama": { "baseURL": "http://localhost:11434" },
+    "hf": { "inferenceURL": "", "apiKey": null }
+  },
+  "features": { "streaming": true, "rollingSummary": true, "telemetry": false }
+}

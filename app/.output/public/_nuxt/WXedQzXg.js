@@ -1,0 +1,1 @@
+import{C as e}from"./Bs9T8u2m.js";import{g as a,c as o,a as t,b as s,o as c}from"./BX-1KC6r.js";import"./YpfM5CC5.js";import"./gtHh74rt.js";import"./BhDW0JFv.js";const r={class:"h-[calc(100vh-56px)] p-3 md:p-6"},n={class:"max-w-5xl mx-auto h-full"},u=a({__name:"index",setup(l){return(m,p)=>(c(),o("div",r,[t("div",n,[s(e,{class:"h-full"})])]))}});export{u as default};

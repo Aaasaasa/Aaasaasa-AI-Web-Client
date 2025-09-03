@@ -9,6 +9,33 @@
 
 # Aaasaasa AI Web Client — ROOT README.md (enhanced)
 
+## Table of Contents
+
+* [Features](#-features)
+* [Architecture](#-architecture)
+* [Prerequisites](#-prerequisites)
+* [Installation](#installation)
+
+  * [Linux](#linux)
+  * [Windows](#windows)
+  * [macOS](#macos)
+* [Quick Start (dev)](#-quick-start-dev)
+* [Production build](#-production-build)
+* [Project structure](#-project-structure)
+* [Configuration](#-configuration-aaasaasaconfigjson)
+* [Nuxt config](#-nuxt-config-spa-for-electron)
+* [app:// protocol loader](#-app-protocol-loader-no-file-pitfalls)
+* [DuckDB](#-duckdb-node-api--init--locking)
+* [IPC bridge](#-ipc-bridge-preload--windowaaasaasa)
+* [Scripts](#-scripts)
+* [Troubleshooting](#-troubleshooting)
+* [Roadmap](#-roadmap)
+* [License](#-license)
+
+---
+Download latest release: [Releases · aleks-asa/aaasaasa-web-client (github.com)](
+Download URL (https://stajic.de/aaasaasa-ai-web-client/releases/) 
+
 **Aaasaasa AI Web Client** is a **desktop (Electron) + web (Nuxt 4 SPA)** client for AI workflows: chat, local functions, RAG search, and PDF/HTML ingestion. Focus: speed, local control, and integration with vector search.
 
 This repository covers the **Web Client**. For the complete system, it is recommended to also use:
@@ -71,6 +98,39 @@ Additionally: Qdrant (vectors) • DuckDB (local records)
 * **pnpm**
 * **Qdrant** running on `http://localhost:6333` (or set in config)
 * Linux for building (AppImage/deb). Windows/macOS builds supported via electron‑builder.
+
+---
+
+## Installation
+
+### Linux
+
+* **AppImage**: make executable & run
+
+  ```bash
+  chmod +x ./Aaasaasa\ Web\ Client-*.AppImage
+  ./Aaasaasa\ Web\ Client-*.AppImage
+  ```
+
+  If AppImage refuses to start, install FUSE:
+
+  ```bash
+  sudo apt-get update && sudo apt-get install -y libfuse2 || true
+  ```
+* **.deb** (Debian/Ubuntu):
+
+  ```bash
+  sudo dpkg -i Aaasaasa_Web_Client-*.deb || sudo apt-get -f install -y
+  ```
+
+### Windows
+
+* Download and run the `Aaasaasa Web Client-*-Setup.exe`.
+* If SmartScreen warns, choose **More info → Run anyway** (until code signing is added).
+
+### macOS
+
+* `.dmg` coming soon. (For local dev you can still run Electron via `pnpm`.)
 
 ---
 
@@ -303,8 +363,67 @@ const hits = await (globalThis as any).aaasaasa.vector.search(new Array(384).fil
 
 ## 🧰 Scripts
 
-* `./bootstrap.sh` — dev mode (cleans, loads `.env`, starts Nuxt + Electron)
-* `./bootstrap-prod.sh` — prod build (Nuxt build, copy renderer + config, electron‑builder)
+### `bootstrap.sh` (dev)
+
+A simple dev runner that starts Nuxt (app) and then Electron (main). It also waits for the dev server to be ready.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export NODE_ENV=development
+export DEV_SERVER_URL="${DEV_SERVER_URL:-http://localhost:3000}"
+
+# 1) install deps (root, app, electron)
+pnpm install
+pnpm -C "$ROOT/app" install
+pnpm -C "$ROOT/electron" install
+
+# 2) start Nuxt dev (background)
+(
+  cd "$ROOT/app"
+  pnpm dev &
+) >/dev/null 2>&1 &
+
+# 3) wait for dev server
+printf "Waiting for %s " "$DEV_SERVER_URL"
+for i in {1..60}; do
+  if curl -fsS "$DEV_SERVER_URL" >/dev/null 2>&1; then echo "✓"; break; fi
+  printf "."; sleep 1
+done
+
+# 4) run Electron main
+cd "$ROOT/electron"
+pnpm exec electron .
+```
+
+### `bootstrap-prod.sh` (build)
+
+Build Nuxt (static), ensure renderer is present, then build Electron packages.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# clean previous renderer
+rm -rf "$ROOT/electron/renderer" || true
+
+# 1) Nuxt static build
+cd "$ROOT/app"
+pnpm install
+pnpm generate
+
+# 2) (fallback copy) If your beforePack already copies, this is harmless
+mkdir -p "$ROOT/electron/renderer"
+rsync -a --delete ./.output/public/ "$ROOT/electron/renderer/" || true
+
+# 3) Electron build
+cd "$ROOT/electron"
+pnpm install
+pnpm exec electron-builder
+```
 
 ---
 

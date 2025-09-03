@@ -1,0 +1,1 @@
+import{C as t}from"./Bs9T8u2m.js";import{g as o,c as a,a as s,b as r,o as n}from"./BX-1KC6r.js";import"./YpfM5CC5.js";import"./gtHh74rt.js";import"./BhDW0JFv.js";const p={class:"p-4 space-y-4"},x=o({__name:"index",setup(c){return(m,e)=>(n(),a("div",p,[e[0]||(e[0]=s("h1",{class:"text-xl font-semibold"},"ChatGPT Web",-1)),r(t)]))}});export{x as default};

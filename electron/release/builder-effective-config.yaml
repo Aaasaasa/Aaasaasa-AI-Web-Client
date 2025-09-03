@@ -1,0 +1,55 @@
+directories:
+  output: ./release
+  buildResources: build
+  app: .
+appId: dev.aaasaasa.webclient
+productName: Aaasaasa Web Client
+artifactName: ${productName}-${version}-${os}-${arch}.${ext}
+extraResources:
+  - from: ../aaasaasa.config.json
+    to: aaasaasa.config.json
+extraMetadata:
+  main: main.cjs
+files:
+  - filter:
+      - '**/*'
+      - '**/*.cjs'
+      - '**/*.js'
+      - '**/*.json'
+      - node_modules/**
+      - services/**
+      - scripts/**
+      - helpers/**
+      - assets/**
+      - renderer/**
+      - '!release/**'
+      - '!dist/**'
+      - '!.nuxt/**'
+      - '!.output/**'
+      - '!**/*.map'
+asar: true
+asarUnpack:
+  - '**/*.node'
+  - '**/entities/**'
+  - '**/@duckdb/**/build/**'
+  - '**/@duckdb/**/prebuilds/**'
+  - '**/duckdb/**/build/**'
+beforePack: ./scripts/before-pack.cjs
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 37.4.0

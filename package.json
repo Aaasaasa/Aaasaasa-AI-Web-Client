@@ -19,30 +19,25 @@
     "dev": "concurrently -k -n NUXT,ELECTRON \"pnpm -C app dev\" \"pnpm -C electron dev:wait\"",
     "dev:nuxt": "pnpm -C app dev",
     "dev:electron": "pnpm -C electron dev",
-    
     "//build": "— Build web → pack app —",
     "build:app": "pnpm -C app generate",
     "prepack:electron": "pnpm -C electron run prepack:entities",
     "pack:linux": "pnpm -C electron exec electron-builder -l AppImage deb",
     "pack:win": "pnpm -C electron exec electron-builder -w nsis portable",
     "pack:all": "pnpm -C electron exec electron-builder -mwl",
-    
     "build:linux": "pnpm run build:app && pnpm run prepack:electron && pnpm run pack:linux",
     "build:win": "pnpm run build:app && pnpm run prepack:electron && pnpm run pack:win",
     "build:all": "pnpm run build:app && pnpm run prepack:electron && pnpm run pack:all",
-    
     "//verify": "— Brze provjere —",
     "verify:renderer": "test -f app/.output/public/index.html && echo \"Nuxt export OK\"",
     "verify:asar": "pnpm -C electron exec asar extract release/linux-unpacked/resources/app.asar /tmp/app-asar && jq -r .main /tmp/app-asar/package.json && test -f /tmp/app-asar/main.cjs && echo OK",
     "verify": "pnpm run verify:renderer && pnpm run verify:asar",
-    
     "//clean": "— Clean & bootstrap —",
     "install:clean": "rm -rf node_modules pnpm-lock.yaml app/node_modules electron/node_modules && pnpm install",
     "bootstrap": "pnpm -C app install && pnpm -C electron install",
-    
     "//aliases": "— Kratice —",
     "dist:linux": "pnpm run build:linux",
-    "dist:win": "pnpm run build:win", 
+    "dist:win": "pnpm run build:win",
     "dist:all": "pnpm run build:all"
   },
   "devDependencies": {
