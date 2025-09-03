@@ -1,1 +1,0 @@
-import{_ as s}from"./DlAUqK2U.js";import{c as n,a as t,o}from"./C6OIWpgv.js";const r={},a={style:{padding:"24px"}};function c(l,e){return o(),n("div",a,[...e[0]||(e[0]=[t("h1",null,"/settings",-1),t("p",null,"Settings ekran (placeholder)",-1)])])}const p=s(r,[["render",c]]);export{p as default};

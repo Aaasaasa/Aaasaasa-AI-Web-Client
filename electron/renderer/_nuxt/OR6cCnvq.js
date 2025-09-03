@@ -1,1 +1,0 @@
-import{_ as r}from"./DlAUqK2U.js";import{c as t,a as o,o as a}from"./C6OIWpgv.js";const n={},s={style:{padding:"24px"}};function l(c,e){return a(),t("div",s,[...e[0]||(e[0]=[o("h1",null,"/ai",-1),o("p",null,"AI ekran (placeholder) u root folderu Pages",-1)])])}const p=r(n,[["render",l]]);export{p as default};
