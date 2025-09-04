@@ -1,9 +1,9 @@
 {
-  "_hash": "vx8B-kIDEK7jZfPCpH7NoW8zIKrj6m3s-o5ApT2Mh_k",
+  "_hash": "Tr59wa5WMTvlaeBAhnX7MV8ojaPFxMhMgbUREGsCiKQ",
   "project": {
-    "rootDir": "/home/aleks/apps/aaasaasa-web-client/app"
+    "rootDir": "/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app"
   },
   "versions": {
-    "nuxt": "4.0.3"
+    "nuxt": "4.1.0"
   }
 }

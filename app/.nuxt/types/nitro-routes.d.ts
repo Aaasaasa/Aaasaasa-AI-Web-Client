@@ -13,7 +13,7 @@ declare module "nitropack/types" {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/api/qdrant/ping.get').default>>>>
     }
     '/__nuxt_error': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/.pnpm/nuxt@4.0.3_@parcel+watcher@2.5.1_@types+node@24.3.0_@vue+compiler-sfc@3.5.21_db0@0.3.2__a2b481e42048dca7f4fef2bc37ce4455/node_modules/nuxt/dist/core/runtime/nitro/handlers/renderer').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/.pnpm/nuxt@4.1.0_@parcel+watcher@2.5.1_@types+node@24.3.0_@vue+compiler-sfc@3.5.21_db0@0.3.2__126ed4ad7e7e72badf7a6cc477f8558b/node_modules/nuxt/dist/core/runtime/nitro/handlers/renderer').default>>>>
     }
     '/__nuxt_island/**': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/#internal/nuxt/island-renderer').default>>>>

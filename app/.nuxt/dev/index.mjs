@@ -1,41 +1,41 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, readMultipartFormData, getResponseStatusText } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/h3@1.15.4/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, getRouterParam, readMultipartFormData, getResponseStatusText } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/h3@1.15.4/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { escapeHtml } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/@vue+shared@3.5.21/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/vue-bundle-renderer@2.1.2/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/ufo@1.6.1/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/destr@2.0.5/node_modules/destr/dist/index.mjs';
-import { createHooks } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/node-mock-http@1.0.2/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/unstorage@1.17.0_db0@0.3.2_ioredis@5.7.0/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/unstorage@1.17.0_db0@0.3.2_ioredis@5.7.0/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs';
-import { klona } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
-import { getContext } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/unctx@2.4.1/node_modules/unctx/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
+import { escapeHtml } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/@vue+shared@3.5.21/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/vue-bundle-renderer@2.1.2/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/ufo@1.6.1/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/destr@2.0.5/node_modules/destr/dist/index.mjs';
+import { createHooks } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/node-mock-http@1.0.2/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/unstorage@1.17.0_db0@0.3.2_ioredis@5.7.0/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/unstorage@1.17.0_db0@0.3.2_ioredis@5.7.0/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs';
+import { klona } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
+import { getContext } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/unctx@2.4.1/node_modules/unctx/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/consola@3.4.2/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/youch-core@0.3.3/node_modules/youch-core/build/index.js';
-import { Youch } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/youch@4.1.0-beta.8/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/source-map@0.7.6/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/consola@3.4.2/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/youch-core@0.3.3/node_modules/youch-core/build/index.js';
+import { Youch } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/youch@4.1.0-beta.8/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/source-map@0.7.6/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { stringify, uneval } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/devalue@5.3.2/node_modules/devalue/index.js';
-import { captureRawStackTrace, parseRawStackTrace } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/errx@0.1.0/node_modules/errx/dist/index.js';
-import { isVNode, toValue, isRef } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/vue@3.5.21_typescript@5.9.2/node_modules/vue/index.mjs';
+import { stringify, uneval } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/devalue@5.3.2/node_modules/devalue/index.js';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/errx@0.1.0/node_modules/errx/dist/index.js';
+import { isVNode, toValue, isRef } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/vue@3.5.21_typescript@5.9.2/node_modules/vue/index.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1 } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/pathe@2.0.3/node_modules/pathe/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/server.mjs';
-import { renderToString } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/vue@3.5.21_typescript@5.9.2/node_modules/vue/server-renderer/index.mjs';
-import { walkResolver } from 'file:///home/aleks/apps/aaasaasa-web-client/node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1 } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/pathe@2.0.3/node_modules/pathe/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/server.mjs';
+import { renderToString } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/vue@3.5.21_typescript@5.9.2/node_modules/vue/server-renderer/index.mjs';
+import { walkResolver } from 'file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/node_modules/.pnpm/unhead@2.0.14/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"/home/aleks/apps/aaasaasa-web-client/app/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -47,11 +47,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/aleks/apps/aaasaasa-web-client/app","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/aleks/apps/aaasaasa-web-client/app/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/aleks/apps/aaasaasa-web-client/app/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/aleks/apps/aaasaasa-web-client/app/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/home/aleks/apps/aaasaasa-web-client/app/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1025,13 +1025,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const __zJEmmG0HZtoWPFXXwDGofXhLWQtFXIzOp4hpN_c4wQ = (function(nitro) {
+const _l41mzjbOXqpwcrEu1IwB70FeujmsG6b2VDks0x9a60 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "/home/aleks/apps/aaasaasa-web-client/app";
+const rootDir = "/media/aleks/2TB P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -1054,7 +1054,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _yOpYc9abJ2j0R4DAJI83RF976SdQvO6ViOX8ZFXjrI = (nitroApp) => {
+const _TaKEODl8tSiREDlTntqE0oP3wlJU9X2ET2E8s_uA9s = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1124,8 +1124,8 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  __zJEmmG0HZtoWPFXXwDGofXhLWQtFXIzOp4hpN_c4wQ,
-_yOpYc9abJ2j0R4DAJI83RF976SdQvO6ViOX8ZFXjrI
+  _l41mzjbOXqpwcrEu1IwB70FeujmsG6b2VDks0x9a60,
+_TaKEODl8tSiREDlTntqE0oP3wlJU9X2ET2E8s_uA9s
 ];
 
 const assets = {};
@@ -1153,7 +1153,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _zotoRd = eventHandler((event) => {
+const _pz93WE = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -1287,7 +1287,7 @@ function publicAssetsURL(...path) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 const getServerEntry = () => Promise.resolve().then(function () { return server$1; }).then((r) => r.default || r);
-const getClientManifest = () => import('file:///home/aleks/apps/aaasaasa-web-client/app/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file:///media/aleks/2TB%20P3Plus/projekte/Aaasaasa-AI-Web-Client/Aaasaasa-AI-Web-Client/app/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -1458,7 +1458,7 @@ function replaceIslandTeleports(ssrContext, html) {
   return html;
 }
 
-const ISLAND_SUFFIX_RE = /\.json(\?.*)?$/;
+const ISLAND_SUFFIX_RE = /\.json(?:\?.*)?$/;
 const _SxA8c9 = defineEventHandler(async (event) => {
   const nitroApp = useNitroApp();
   setResponseHeaders(event, {
@@ -1535,19 +1535,19 @@ async function getIslandContext(event) {
   return ctx;
 }
 
-const _lazy_fu_5fc = () => Promise.resolve().then(function () { return _route_$1; });
-const _lazy_naaqFP = () => Promise.resolve().then(function () { return ingest_post$1; });
-const _lazy_MeN1yE = () => Promise.resolve().then(function () { return ping_get$1; });
-const _lazy_bcNxMR = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_EZLt9w = () => Promise.resolve().then(function () { return _route_$1; });
+const _lazy_15IQQC = () => Promise.resolve().then(function () { return ingest_post$1; });
+const _lazy_dSfj6m = () => Promise.resolve().then(function () { return ping_get$1; });
+const _lazy_8QaGYA = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _zotoRd, lazy: false, middleware: true, method: undefined },
-  { route: '/api/aaasaasa/:route', handler: _lazy_fu_5fc, lazy: true, middleware: false, method: undefined },
-  { route: '/api/ingest', handler: _lazy_naaqFP, lazy: true, middleware: false, method: "post" },
-  { route: '/api/qdrant/ping', handler: _lazy_MeN1yE, lazy: true, middleware: false, method: "get" },
-  { route: '/__nuxt_error', handler: _lazy_bcNxMR, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _pz93WE, lazy: false, middleware: true, method: undefined },
+  { route: '/api/aaasaasa/:route', handler: _lazy_EZLt9w, lazy: true, middleware: false, method: undefined },
+  { route: '/api/ingest', handler: _lazy_15IQQC, lazy: true, middleware: false, method: "post" },
+  { route: '/api/qdrant/ping', handler: _lazy_dSfj6m, lazy: true, middleware: false, method: "get" },
+  { route: '/__nuxt_error', handler: _lazy_8QaGYA, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_bcNxMR, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_8QaGYA, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

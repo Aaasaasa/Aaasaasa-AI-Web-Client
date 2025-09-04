@@ -32,5 +32,5 @@ export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useDbSql } from '../composables/useDbSql';
 export { log, warn, err } from '../utils/log';
 export { sql } from '../utils/sql';
-export { useNuxtDevTools } from '../../node_modules/.pnpm/@nuxt+devtools@2.6.3_vite@7.1.4_@types+node@24.3.0_jiti@2.5.1_lightningcss@1.30.1_stylu_50cb7a0dc6f96c5a2406c37e61fd2a4a/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
-export { definePageMeta } from '../../node_modules/.pnpm/nuxt@4.0.3_@parcel+watcher@2.5.1_@types+node@24.3.0_@vue+compiler-sfc@3.5.21_db0@0.3.2__a2b481e42048dca7f4fef2bc37ce4455/node_modules/nuxt/dist/pages/runtime/composables';
+export { useNuxtDevTools } from '../../node_modules/.pnpm/@nuxt+devtools@2.6.3_vite@7.1.4_@types+node@24.3.0_jiti@2.5.1_lightningcss@1.30.1_stylu_b9919608f2d669e229b7cf02348e82f6/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
+export { definePageMeta } from '../../node_modules/.pnpm/nuxt@4.1.0_@parcel+watcher@2.5.1_@types+node@24.3.0_@vue+compiler-sfc@3.5.21_db0@0.3.2__126ed4ad7e7e72badf7a6cc477f8558b/node_modules/nuxt/dist/pages/runtime/composables';
