@@ -1128,7 +1128,22 @@ const plugins = [
 _yOpYc9abJ2j0R4DAJI83RF976SdQvO6ViOX8ZFXjrI
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"134ee-jH9mXrILBAX4pg4ctAlguHWibxQ\"",
+    "mtime": "2025-09-10T05:22:30.283Z",
+    "size": 79086,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"485d7-J8S8GGbSJ6PGlEdGOvY+ypOGMsk\"",
+    "mtime": "2025-09-10T05:22:30.284Z",
+    "size": 296407,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -1891,6 +1906,12 @@ const _route_ = defineEventHandler(async (event) => {
   const rest = (_a = event.context.params) == null ? void 0 : _a.route;
   const path = Array.isArray(rest) ? rest.join("/") : String(rest || "");
   const target = `${base}/${path}`;
+  try {
+    new URL(target);
+    return proxyRequest(event, target);
+  } catch (e) {
+    throw createError({ statusCode: 400, statusMessage: "Invalid target URL" });
+  }
   return proxyRequest(event, target);
 });
 

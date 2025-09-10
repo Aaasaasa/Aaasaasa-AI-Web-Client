@@ -9,6 +9,14 @@ const base = process.env.AAASAASA_BASE || 'http://127.0.0.1:8080'
 const rest = event.context.params?.route
 const path = Array.isArray(rest) ? rest.join('/') : String(rest || '')
 const target = `${base}/${path}`
+try {
+  new URL(target)
+  // console.log('Proxying request to:', target)  
+    return proxyRequest(event, target)
+} catch (e) {
+  throw createError({ statusCode: 400, statusMessage: 'Invalid target URL' })
+}
+// console.log('Proxying request to:', target)  
 return proxyRequest(event, target)
 })
 

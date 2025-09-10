@@ -20,7 +20,7 @@ const nav = [
   { to: '/', label: 'Home', icon: Home },
   { to: '/ai', label: 'AI', icon: Bot },
   { to: '/chatgpt', label: 'ChatGPT', icon: Bot },
-  { to: 'chatgpt', label: 'ChatGPT Web', icon: Bot },
+  { to: 'about', label: 'About', icon: Bot },
   { to: '/settings', label: 'Settings', icon: Settings },
 ]
 
